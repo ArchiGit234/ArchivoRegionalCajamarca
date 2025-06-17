@@ -1,0 +1,204 @@
+  html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #e3f2fd; /* Fondo celeste claro */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Contenido principal que ocupa espacio flexible */
+    main {
+      flex: 1 0 auto;
+    }
+
+    /* Navbar con degradado amarillo suave y texto negro */
+    .navbar {
+      background: linear-gradient(90deg, #ffe082 0%, #fffde7 100%);
+    }
+
+    .navbar .navbar-nav .nav-link {
+      color: #222 !important; /* Letras negras */
+      font-weight: 600;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .navbar-brand:visited {
+      color: #222 !important;
+    }
+
+    .navbar .nav-link.active,
+    .navbar .nav-link:focus,
+    .navbar .nav-link:hover {
+      color: #b8860b !important; /* Amarillo oscuro al pasar el mouse */
+    }
+
+    .navbar .navbar-brand img {
+      border-radius: 8px;
+    }
+
+    /* Footer fijo abajo */
+    footer {
+      flex-shrink: 0;
+      background: #ffe082;
+      color: #222;
+      font-weight: 500;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Títulos h2 con color amarillo oscuro */
+    h2 {
+      color: #b8860b;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    /* Estilos del Modal */
+    .image-modal {
+      display: none;
+      position: fixed;
+      z-index: 1055;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+    }
+    
+    .modal-content {
+      position: relative;
+      margin: 5% auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    
+    .modal-image {
+      width: 100%;
+      height: auto;
+      max-height: 70vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .modal-controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .btn-image {
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 15px;
+    }
+    
+    .btn-image:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: #999;
+      transition: color 0.3s ease;
+    }
+    
+    .close-btn:hover {
+      color: #333;
+    }
+    
+    .download-btn {
+      background: linear-gradient(45deg, #28a745, #20c997);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+    }
+    
+    .close-modal-btn {
+      background: linear-gradient(45deg, #dc3545, #c82333);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .close-modal-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
+    }
+    
+    .image-navigation {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    
+    .nav-btn {
+      background: linear-gradient(45deg, #6c757d, #495057);
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(108, 117, 125, 0.4);
+    }
+    
+    .nav-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .modal-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #333;
+    }

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventario en Línea - Archivo Regional de Cajamarca</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <link href="css/style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  </head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="img/logo-archivo.png" alt="Logo Archivo" height="40" class="me-2">
+      Archivo Regional de Cajamarca
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="inventario.html">Inventario en Línea</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link" href="transparencia.html">Transparencia</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-5">
+  <h2 class="text-center mb-4">
+    Inventario en Línea 
+    <button class="btn-image" onclick="openImageModal(['img/pri.png', 'img/se.png'], ['Tríptico Notarios - Página 1', 'Tríptico Notarios - Página 2'])">
+      <i class="bi bi-images"></i> Ver Tríptico
+    </button>
+  </h2>
+
+  
+
+  <form class="mb-4" id="form1">
+    <div class="input-group shadow">
+      <span class="input-group-text bg-gradient text-white" style="background: linear-gradient(90deg, #667eea, #764ba2);">
+        <i class="bi bi-search"></i>
+      </span>
+      <input type="text" class="form-control" placeholder="Buscar notario o provincia" />
+      <button class="btn btn-primary" type="submit">Buscar</button>
+    </div>
+  </form>
+
+  <div class="table-responsive shadow rounded">
+    <table class="table table-striped table-hover align-middle" id="table1">
+      <thead class="table-primary">
+        <tr>
+          <th>Notario</th>
+          <th>Provincia</th>
+          <th>Período</th>
+          <th>Documentos</th>
+        </tr>
+      </thead>
+      <tbody>
+  <!-- PROVINCIA DE CAJABAMBA -->
+  <tr><td>Rodríguez Vargas, Juan</td><td>Cajabamba</td><td>2012-2013</td><td></td></tr>
+  <tr><td>Portal Martínez Juan</td><td>Cajabamba</td><td>2009-2021</td><td></td></tr>
+  <tr><td>Miranda Ordoñez Walter</td><td>Cajabamba</td><td>2005-2013</td><td></td></tr>
+  <tr><td>Rodríguez Cruzado, Alejandro</td><td>Cajabamba</td><td>2005-2012</td><td></td></tr>
+  <tr><td>Lozano Gutiérrez, Eddy</td><td>Cajabamba</td><td>1998-2007</td><td></td></tr>
+  <tr><td>Miranda Llaqué, Luis</td><td>Cajabamba</td><td>1981-1998</td><td></td></tr>
+  <tr><td>Fabian Santos José</td><td>Cajabamba</td><td>1957-1977</td><td></td></tr>
+  <tr><td>Urrunaga, Guillermo</td><td>Cajabamba</td><td>1955-1998</td><td></td></tr>
+  <tr><td>Silva Rocha, Mario</td><td>Cajabamba</td><td>1941-1955</td><td></td></tr>
+  <tr><td>Urbina Felipe</td><td>Cajabamba</td><td>1927-1955</td><td></td></tr>
+  <tr><td>Whitembury, Manuel</td><td>Cajabamba</td><td>1906-1917</td><td></td></tr>
+  <tr><td>Torres Miguel</td><td>Cajabamba</td><td>1905-1932</td><td></td></tr>
+  <tr><td>Torres Hilario</td><td>Cajabamba</td><td>1863-1900</td><td></td></tr>
+
+
+
+  <!-- PROVINCIA DE CAJAMARCA -->
+  <tr><td>Bustamante Deza, E.</td><td>Cajamarca</td><td>2013-2014</td><td></td></tr>
+  <tr><td>Amayo, Eduardo</td><td>Cajamarca</td><td>1991-2006</td><td></td></tr>
+  <tr><td>Sifuentes, Marcial</td><td>Cajamarca</td><td>1962-1972</td><td></td></tr>
+  <tr><td>Cabanillas Becerra, J.</td><td>Cajamarca</td><td>1961-2009</td><td></td></tr>
+  <tr><td>Rodríguez, Alfonso</td><td>Cajamarca</td><td>1957-1963</td><td></td></tr>
+  <tr><td>Sánchez Sarabia, N.</td><td>Cajamarca</td><td>1956-1992</td><td></td></tr>
+  <tr><td>Silva Rocha, Mario</td><td>Cajamarca</td><td>1954-1982</td><td></td></tr>
+  <tr><td>Silva Callirgos, Pedro</td><td>Cajamarca</td><td>1942-1961</td><td></td></tr>
+  <tr><td>Vergara C. Luis</td><td>Cajamarca</td><td>1937-1957</td><td></td></tr>
+  <tr><td>Villanueva Bazán, Juan</td><td>Cajamarca</td><td>1938-1956</td><td></td></tr>
+  <tr><td>Correa, Juan</td><td>Cajamarca</td><td>1928-1957</td><td></td></tr>
+  <tr><td>Mercado, Alindor</td><td>Cajamarca</td><td>1927-1938</td><td></td></tr>
+  <tr><td>Burga, Mariano</td><td>Cajamarca</td><td>1905-1934</td><td></td></tr>
+  <tr><td>Rocha, José Manuel</td><td>Cajamarca</td><td>1903-1914</td><td></td></tr>
+  <tr><td>Santisteban, Daniel</td><td>Cajamarca</td><td>1901-1908</td><td></td></tr>
+  <tr><td>Ríos, Federico</td><td>Cajamarca</td><td>1901-1914</td><td></td></tr>
+
+
+  <!-- PROVINCIA DE CELENDÍN -->
+  <tr><td>Bazan Peralta, A.</td><td>Celendín</td><td>1942-1992</td><td></td></tr>
+  <tr><td>Zumaran Víctor</td><td>Celendín</td><td>1929-1941</td><td></td></tr>
+  <tr><td>Guerrero, Justiniano</td><td>Celendín</td><td>1917-1928</td><td></td></tr>
+  <tr><td>Merino Manuel</td><td>Celendín</td><td>1907-1916</td><td></td></tr>
+  <tr><td>Burga Mariano</td><td>Celendín</td><td>1871-1906</td><td></td></tr>
+
+  <!-- PROVINCIA DE CONTUMAZÁ -->
+  <tr><td>Acuña Leyva</td><td>Contumazá</td><td>1987-1998</td><td></td></tr>
+  <tr><td>Florian, Custodio</td><td>Contumazá</td><td>1958-1967</td><td></td></tr>
+  <tr><td>Fabian José</td><td>Contumazá</td><td>1954-1957</td><td></td></tr>
+  <tr><td>Quiroz, Antenor</td><td>Contumazá</td><td>1943-1951</td><td></td></tr>
+  <tr><td>Ponce, Jorge</td><td>Contumazá</td><td>1935-1942</td><td></td></tr>
+  <tr><td>Gonzales Noé</td><td>Contumazá</td><td>1921-1934</td><td></td></tr>
+  <tr><td>Alva, Samuel</td><td>Contumazá</td><td>1911-1919</td><td></td></tr>
+  <tr><td>Alva, Felix</td><td>Contumazá</td><td>1892-1900</td><td></td></tr>
+
+  <!-- DISTRITO DE YONAN TEMBLADERA - CONTUMAZÁ -->
+  <tr><td>Urbano Salazar José</td><td>Yonan Tembladera - Contumazá</td><td>1955-2004</td><td></td></tr>
+
+  <!-- PROVINCIA DE HUALGAYOC - BAMBAMARCA -->
+  <tr><td>Vigo Rojas Marco A.</td><td>Hualgayoc - Bambamarca</td><td>1991-1992</td><td></td></tr>
+  <tr><td>Trujillo Benites</td><td>Hualgayoc - Bambamarca</td><td>1966-1981</td><td></td></tr>
+  <tr><td>Miranda Llaqué L.</td><td>Hualgayoc - Bambamarca</td><td>1965-1966</td><td></td></tr>
+  <tr><td>Pino Mantilla, Jesús</td><td>Hualgayoc - Bambamarca</td><td>1957-1966</td><td></td></tr>
+  <tr><td>Sánchez Sarabia, N.</td><td>Hualgayoc - Bambamarca</td><td>1954-1955</td><td></td></tr>
+  <tr><td>Mejía Bueno, Juan</td><td>Hualgayoc - Bambamarca</td><td>1929-1953</td><td></td></tr>
+  <tr><td>Jauregui, Eloy</td><td>Hualgayoc - Bambamarca</td><td>1906-1928</td><td></td></tr>
+  <tr><td>Mestanza, Antonio</td><td>Hualgayoc - Bambamarca</td><td>1897-1906</td><td></td></tr>
+  <tr><td>Chico, Diego</td><td>Hualgayoc - Bambamarca</td><td>1880-1896</td><td></td></tr>
+
+  <!-- PROVINCIA DE SAN MARCOS -->
+  <tr><td>Nué Sessarego, Ivy</td><td>San Marcos</td><td>1997-2005</td><td></td></tr>
+
+  <!-- PROVINCIA DE SAN MIGUEL -->
+  <tr><td>Miranda Ordoñez, W.</td><td>San Miguel</td><td>2005-2014</td><td></td></tr>
+  <tr><td>Cubas Renee</td><td>San Miguel</td><td>1991-2005</td><td></td></tr>
+  <tr><td>Miranda Llaqué Luis</td><td>San Miguel</td><td>1965-1982</td><td></td></tr>
+  <tr><td>Arribasplata Becerra</td><td>San Miguel</td><td>1965-1970</td><td></td></tr>
+  <tr><td>Farfán Luis</td><td>San Miguel</td><td>1959-1964</td><td></td></tr>
+  <tr><td>Matta Juan</td><td>San Miguel</td><td>1935-1958</td><td></td></tr>
+  <tr><td>Mestanza Rubén</td><td>San Miguel</td><td>1927-1934</td><td></td></tr>
+  <tr><td>Sarabia Baltazar</td><td>San Miguel</td><td>1872-1925</td><td></td></tr>
+   </tbody>
+    </table>
+  </div>
+</main>
+
+<main class="container py-5">
+  <h3 class="text-center mb-4">Etapa Colonia Y República</h3>
+  <form class="mb-4" id="form2">
+    <div class="input-group shadow">
+      <span class="input-group-text bg-gradient text-white" style="background: linear-gradient(90deg, #667eea, #764ba2);">
+        <i class="bi bi-search"></i>
+      </span>
+      <input type="text" class="form-control" placeholder="Buscar notario o provincia" />
+      <button class="btn btn-primary" type="submit">Buscar</button>
+    </div>
+  </form>
+
+  <div class="table-responsive shadow rounded">
+    <table class="table table-striped table-hover align-middle" id="table2">
+      <thead class="table-primary">
+        <tr>
+          <th>Notario</th>
+          <th>Etapa</th>
+          <th>Período</th>
+          <th>Documentos</th>
+        </tr>
+      </thead>
+      <tbody>
+       <!--ETAPA REPUBLICANA-->
+  <tr><td>Ríos Federico</td><td>República</td><td>1877-1900</td><td></td></tr>
+  <tr><td>Santisteban Diego</td><td>República</td><td>1856-1900</td><td></td></tr>
+  <tr><td>Castro Juan</td><td>República</td><td>1847-1876</td><td></td></tr>
+  <tr><td>Chavarry Pedro José</td><td>República</td><td>1842-1876</td><td></td></tr>
+  <tr><td>Pita José Matías</td><td>República</td><td>1841</td><td></td></tr>
+  <tr><td>Arana Juan Manuel</td><td>República</td><td>1831-1841</td><td></td></tr>
+  <tr><td>Del Carmen Mariano</td><td>República</td><td>1822-1839</td><td></td></tr>
+  <tr><td>Pérez Aguilar, Martin</td><td>Colonia</td><td>1601-1609</td><td></td></tr>
+<tr><td>Espinoza Gerónimo</td><td>Colonia</td><td>1602-1640</td><td></td></tr>
+<tr><td>Antolinez Valdez, Yñigo</td><td>Colonia</td><td>1623-1624</td><td></td></tr>
+<tr><td>Torquemada, Francisco y Martínez Juan José</td><td>Colonia</td><td>1623-1686</td><td></td></tr>
+<tr><td>Ruiz de Arana, Joseph</td><td>Colonia</td><td>1628-1663</td><td></td></tr>
+<tr><td>Ortiz Cabeza, Francisco y Muxica de Barturen Juan y otros</td><td>Colonia</td><td>1643-1651</td><td></td></tr>
+<tr><td>Zéspedes Prieto, Juan</td><td>Colonia</td><td>1652-1664</td><td></td></tr>
+<tr><td>Saldaña Pinedo, Pedro</td><td>Colonia</td><td>1653-1677</td><td></td></tr>
+<tr><td>Llanos Antonio y Muxica Barturen Juan</td><td>Colonia</td><td>1652-1725</td><td></td></tr>
+<tr><td>Julquirasco, Juan</td><td>Colonia</td><td>1679-1688</td><td></td></tr>
+<tr><td>Mellan Franco, Joseph</td><td>Colonia</td><td>1681-1703</td><td></td></tr>
+<tr><td>Díaz de Velasco y Esparza José</td><td>Colonia</td><td>1674-1703</td><td></td></tr>
+<tr><td>Cosalingo, Diego y Sayac Juan</td><td>Colonia</td><td>1700-1725</td><td></td></tr>
+<tr><td>Hoyos, Juan Antonio</td><td>Colonia</td><td>1699-1703</td><td></td></tr>
+<tr><td>Muxica de Barturen Juan</td><td>Colonia</td><td>1706-1727</td><td></td></tr>
+<tr><td>Gastañaduy, Juan M.</td><td>Colonia</td><td>1710-1711</td><td></td></tr>
+<tr><td>Cayetano Quiroz Gregorio</td><td>Colonia</td><td>1719-1720</td><td></td></tr>
+<tr><td>Payac Juan y Navarro Pablo</td><td>Colonia</td><td>1720-1730</td><td></td></tr>
+<tr><td>Callirgos y Polanco Antonio</td><td>Colonia</td><td>1727-1750</td><td></td></tr>
+<tr><td>Piedrola Manuel Nicolás</td><td>Colonia</td><td>1735-1766</td><td></td></tr>
+<tr><td>Muñoz Miguel Antonio y otros</td><td>Colonia</td><td>1765-1775</td><td></td></tr>
+<tr><td>Silva Santisteban, Domingo</td><td>Colonia</td><td>1771-1780</td><td></td></tr>
+<tr><td>Vega Bazán Luis</td><td>Colonia</td><td>1777-1784</td><td></td></tr>
+<tr><td>Silva Santisteban, Juan</td><td>Colonia</td><td>1781-1801</td><td></td></tr>
+<tr><td>Palma, Antonio</td><td>Colonia</td><td>1781-1795</td><td></td></tr>
+<tr><td>Urbina Joseph, Valentín</td><td>Colonia</td><td>1797-1800</td><td></td></tr>
+<tr><td>Silva Santisteban, Manuel</td><td>Colonia</td><td>1802-1816</td><td></td></tr>
+<tr><td>Guzmán, Bacilio Antonio</td><td>Colonia</td><td>1806-1811</td><td></td></tr>
+
+         
+        </tbody>
+    </table>
+  </div>
+</main>
+
+<!-- Modal de Imágenes -->
+<div id="imageModal" class="image-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title" id="modalTitle">Imagen</h3>
+      <button class="close-btn" onclick="closeImageModal()">&times;</button>
+    </div>
+    <div class="modal-body text-center">
+      <img id="modalImage" class="modal-image" src="" alt="">
+      <div class="image-navigation">
+        <button id="prevBtn" class="nav-btn" onclick="previousImage()">
+          <i class="bi bi-chevron-left"></i> Anterior
+        </button>
+        <span id="imageCounter" class="badge bg-secondary">1 / 2</span>
+        <button id="nextBtn" class="nav-btn" onclick="nextImage()">
+          Siguiente <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal-controls">
+      <button class="download-btn" onclick="downloadImage()">
+        <i class="bi bi-download"></i> Descargar
+      </button>
+      <button class="close-modal-btn" onclick="closeImageModal()">
+        <i class="bi bi-x-circle"></i> Cerrar
+      </button>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center py-3">
+  &copy; Archivo Regional de Cajamarca
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  let currentImages = [];
+  let currentImageIndex = 0;
+  let currentImageTitles = [];
+
+  function openImageModal(images, titles) {
+    currentImages = images;
+    currentImageTitles = titles || [];
+    currentImageIndex = 0;
+    
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const imageCounter = document.getElementById('imageCounter');
+    
+    // Mostrar la primera imagen
+    modalImage.src = currentImages[0];
+    modalTitle.textContent = currentImageTitles[0] || 'Imagen 1';
+    imageCounter.textContent = `1 / ${currentImages.length}`;
+    
+    // Actualizar botones de navegación
+    updateNavigationButtons();
+    
+    // Mostrar el modal
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevenir scroll del fondo
+  }
+
+  function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restaurar scroll
+  }
+
+  function nextImage() {
+    if (currentImageIndex < currentImages.length - 1) {
+      currentImageIndex++;
+      updateModalImage();
+    }
+  }
+
+  function previousImage() {
+    if (currentImageIndex > 0) {
+      currentImageIndex--;
+      updateModalImage();
+    }
+  }
+
+  function updateModalImage() {
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const imageCounter = document.getElementById('imageCounter');
+    
+    modalImage.src = currentImages[currentImageIndex];
+    modalTitle.textContent = currentImageTitles[currentImageIndex] || `Imagen ${currentImageIndex + 1}`;
+    imageCounter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+    
+    updateNavigationButtons();
+  }
+
+  function updateNavigationButtons() {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    prevBtn.disabled = currentImageIndex === 0;
+    nextBtn.disabled = currentImageIndex === currentImages.length - 1;
+  }
+
+  function downloadImage() {
+    const currentImageSrc = currentImages[currentImageIndex];
+    const currentImageTitle = currentImageTitles[currentImageIndex] || `imagen_${currentImageIndex + 1}`;
+    
+    // Crear un enlace temporal para la descarga
+    const link = document.createElement('a');
+    link.href = currentImageSrc;
+    link.download = currentImageTitle.replace(/[^a-z0-9]/gi, '_').toLowerCase() + '.png';
+    
+    // Agregar el enlace al DOM, hacer clic y removerlo
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  // Cerrar modal con ESC
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      closeImageModal();
+    }
+  });
+
+  // Cerrar modal al hacer clic fuera del contenido
+  document.getElementById('imageModal').addEventListener('click', function(event) {
+    if (event.target === this) {
+      closeImageModal();
+    }
+  });
+
+  // Navegación con teclado
+  document.addEventListener('keydown', function(event) {
+    const modal = document.getElementById('imageModal');
+    if (modal.style.display === 'block') {
+      if (event.key === 'ArrowLeft') {
+        previousImage();
+      } else if (event.key === 'ArrowRight') {
+        nextImage();
+      }
+    }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function setupSearch(formId, tableId) {
+    document.getElementById(formId).addEventListener("submit", function (e) {
+      e.preventDefault();
+      const input = this.querySelector("input[type='text']").value.trim().toLowerCase();
+      const rows = document.querySelectorAll(`#${tableId} tbody tr`);
+
+      rows.forEach((row) => {
+        const notario = row.children[0].textContent.toLowerCase();
+        const provincia = row.children[1].textContent.toLowerCase();
+
+        if (notario.includes(input) || provincia.includes(input)) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    });
+  }
+  setupSearch("form1", "table1");
+  setupSearch("form2", "table2");
+</script>
+
+
+</body>
+</html>
